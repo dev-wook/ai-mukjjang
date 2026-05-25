@@ -38,17 +38,7 @@ pnpm dev
 
 브라우저에서 `http://localhost:3000`으로 접속합니다.
 
-## 환경 변수
+## 환경 설정
 
-`.env.example`을 참고해 `.env.local`을 설정합니다.
-
-```bash
-GEMINI_API_KEY=
-GEMINI_TEXT_MODEL=gemini-3.5-flash
-GEMINI_FALLBACK_TEXT_MODEL=gemini-2.5-flash
-NAVER_CLIENT_ID=
-NAVER_CLIENT_SECRET=
-BLOG_SEARCH_LIMIT=10
-```
-
-`GEMINI_API_KEY`가 없으면 실제 AI 분석 대신 mock 분석 결과로 동작합니다.
+외부 API 키와 실행 환경별 설정값은 로컬 또는 배포 환경에서 별도로 관리합니다.  
+개인/클라이언트별 환경 변수는 저장소에 포함하지 않습니다.
